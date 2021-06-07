@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html form</title>
+</head>
+
+<body>
+    <form action="index.html" autocomplete="on" method="GET" target="_blank">
+        <h1>Fill this form To Contact me</h1>
+        <div>
+            First name:
+            <input type="text" autofocus name="fname" placeholder="enter First name" required />
+            <span>
+                Last name:
+                <input type="text" name="lname" placeholder="enter Last name" required />
+            </span>
+        </div>
+        <br />
+        <div>
+            Email:
+            <input type="email" name="useremail" id="email" required size="30" />
+        </div>
+        <br />
+        <div>
+            password: <input type="password" name="userpass" id="password" />
+        </div>
+        <br />
+        <div>Mobile: <input type="tel" name="phoneno" id="phoneno" /></div>
+        <br />
+        <div>
+            Date of birth: <input type="date" name="DOB" id="DOB" required />
+        </div>
+        <br />
+        <div>
+            DOB with date and time:- <input type="datetime-local" name="DOB" id="">
+        </div>
+        <br>
+
+        <div>
+
+            Gender :- <label for="male">male</label><input type="radio" name="gender" id="male" />
+            <!-- in radio button we can select only one button at a time-->
+            <label for="female">female</label><input type="radio" name="gender" id="female" />
+
+            <label for="other">other</label> <input type="radio" name="gender" id="other" />
+        </div>
+        <br />
+        <div>
+            language:- <label for="english">English</label> <input type="checkbox" name="lang" id="english">
+            <label for="hindi">Hindi</label> <input type="checkbox" name="lang" id="hindi"> <!-- in checkbox we can tick more than one boxes -->
+            <label for="Bengali">Bengali</label> <input type="checkbox" name="lang" id="Bengali">
+        </div>
+        <br>
+        <div>
+            Work Time <input type="time" name="usertime" id="">
+        </div>
+        <br>
+        <div>
+            work month <input type="month" name="work month" id="">
+        </div>
+        <br>
+        <div>work week <input type="week" name="week" id=""></div><br>
+        <div>
+            Color <input type="color" name="uicolor" id="">
+        </div><br>
+        <div>
+            <!-- important :- Accept attribute and multiple -->
+            Upload Photo <input type="file" accept="image/*" name="photofile" multiple>
+        </div><br>
+        <div>
+            <!-- important :- Accept attribute-->
+            Upload Video <input type="file" accept="video/*" name="videofile" id="">
+        </div><br>
+        <div>
+            Upload resume <input type="file"
+                accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                name="user resume" id="">
+        </div><br>
+        <div>
+            Upload anything: <input type="file" name="user_file">
+        </div><br>
+        <div>
+            No. of Family Members <input type="number" name="no." min="1" max="10">
+        </div>
+        <br>
+        <div>
+            Range <input type="range" name="range" min="0" max="5">
+        </div><br>
+        <div>
+            Search <input type="search" name="usersearch" id="">
+        </div><br>
+        <div>
+            Linkedin url:- <input type="URL" name="user_linkedin" id="">
+        </div>
+        <br>
+        <div>
+            <!--important attribute-->
+            Fav. Car <input list="car" size="5">
+            <datalist id="car">
+                <option value="BMW"></option>
+                <option value="JEEP"></option>
+                <option value="Ferrari"></option>
+
+            </datalist>
+        </div><br>
+        <div>
+            No. of product: <input type="number" name="number" step="5">
+        </div><br>
+        <div>
+            <!--important ++ -->
+            your message : <textarea name="comment" id="comment" cols="30" rows="10" maxlength="10"
+                placeholder="enter text here"></textarea>
+        </div>
+        <div>
+            <input type="reset" value="Reset form">
+            <input type="submit" value="Submit form" />
+        </div>
+    </form>
+</body>
+
+</html>
